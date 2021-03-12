@@ -196,6 +196,8 @@ body {
   opacity: 1;
 }
 
+/* Третья секция */
+
 .form-page {
   margin-top: -190px;
   display: flex;
@@ -219,6 +221,8 @@ body {
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* Четвертая секция (footer) */
 
 .footer {
   display: flex;
