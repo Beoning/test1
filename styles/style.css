@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202024;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-page {
+  position: absolute;
+  top: -156px;
+  left: 0;
+}
+
+/* Первая секция */
+.gold-text {
+  color: #f6c866;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1920px;
+  height: 1098px;
+  padding-top: 156px;
+  background: url("../images/blik.png") no-repeat 0 -156px;
+  background-size: 100% 100%;
+}
+
+.question span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  padding-top: 36.46px;
+}
+
+.horisontal-line {
+  width: 1440px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+}
+
+.question h1 {
+  padding-top: 15px;
+  padding-bottom: 40px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+}
+
+.img-wrapper {
+  padding-top: 64.42px;
+  height: 300px;
+  width: 300px;
+  background: url("../images/icon1.svg") no-repeat 50% 50%;
+  background-size: 344.76px 344.61px;
+}
+
+.img-wrapper img {
+  position: relative;
+  top: 10px;
+  left: 46px;
+  width: 210px;
+  height: 210px;
+}
+
+.description {
+  width: 499.97px;
+  height: 130.2px;
+}
+
+.description p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.btn {
+  width: 310.75px;
+  height: 69.44px;
+  background: linear-gradient(
+      248.67deg,
+      rgba(255, 255, 255, 0) 30.84%,
+      rgba(255, 255, 255, 0.29) 46.06%,
+      rgba(255, 255, 255, 0) 64.04%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(246, 200, 102, 0.9) -6.2%,
+      rgba(254, 173, 53, 0.9) 100%
+    );
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.btn:last-of-type {
+  margin-top: 30px;
+}
+
+.btn-wrapper p {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+.btn::-moz-focus-inner {
+  border: 0;
+}
+
+/* Вторая секция */
+
+.prediction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prediction_first {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 442.68px;
+  height: 437.48px;
+}
+
+.prediction_first img {
+  position: relative;
+  top: -70px;
+  width: 135px;
+  height: 135px;
+}
+
+.text-wrapper {
+  margin-top: -20px;
+  width: 365px;
+  height: 225px;
+}
+
+.text-wrapper p {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.big-img {
+  width: 1440px;
+  height: 606px;
+  margin-top: 70px;
+  background: url("../images/image7.jpg") no-repeat 0 -170px;
+  background-size: cover;
+  opacity: 0.25;
+  margin-bottom: 50px;
+}
+
+.absolute-p {
+  position: relative;
+  left: 0;
+  top: -400px;
+  width: 380.19px;
+  height: 258.67px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.form-page {
+  margin-top: -190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-page span {
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+
+.form-page p {
+  margin: 30px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer .eye1-img {
+  position: absolute;
+  left: 75.48%;
+  top: 85.04%;
+  transform: rotate(-3.61deg);
+  width: 300px;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan img:first-of-type {
+  width: auto;
+  height: 19px;
+}
+
+.slogan p {
+  font-family: Bad Script;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.slogan img:last-of-type {
+  width: auto;
+  height: 19px;
+  margin-bottom: 120px;
+}
+
+.footer .eye2-img {
+  position: absolute;
+  left: 8%;
+  top: 93.6%;
+  transform: rotate(-3.61deg);
+  width: 160px;
+}
