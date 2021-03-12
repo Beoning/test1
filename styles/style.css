@@ -11,9 +11,11 @@ body {
 }
 
 .main-page {
-  position: absolute;
-  top: -156px;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -156px;
+  width: 100%;
 }
 
 /* Первая секция */
@@ -25,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1920px;
+  width: 100%;
   height: 1098px;
   padding-top: 156px;
   background: url("../images/blik.png") no-repeat 0 -156px;
@@ -138,6 +140,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .prediction_first {
@@ -145,6 +149,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 3px;
@@ -154,7 +159,7 @@ body {
 
 .prediction_first img {
   position: relative;
-  top: -70px;
+  top: -26%;
   width: 135px;
   height: 135px;
 }
@@ -225,54 +230,52 @@ body {
 /* Четвертая секция (footer) */
 
 .footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  background: url("../images/eye-1.svg") no-repeat 90% 0,
+    url("../images/eye.svg") no-repeat 5% 90%;
 }
 
-.footer .eye1-img {
-  position: absolute;
-  left: 75.48%;
-  top: 85.04%;
-  transform: rotate(-3.61deg);
-  width: 300px;
+.footer img {
+  height: 10px;
 }
 
-.slogan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.footer img:first-of-type {
+  margin-top: 80px;
 }
 
-.slogan img:first-of-type {
-  width: auto;
-  height: 19px;
+.footer img:last-of-type {
+  margin-bottom: 100px;
 }
 
-.slogan p {
+.footer p {
+  padding: 50px 0;
   font-family: Bad Script;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 35px;
-  color: #ffffff;
-  padding: 70px 0;
   text-align: center;
+  color: #ffffff;
 }
 
-.slogan img:last-of-type {
-  width: auto;
-  height: 19px;
-  margin-bottom: 120px;
-}
-
-.footer .eye2-img {
-  position: absolute;
-  left: 8%;
-  top: 93.6%;
-  transform: rotate(-3.61deg);
-  width: 160px;
+@media (min-width: 600px) and (max-width: 1440px) {
+  .horisontal-line {
+    width: 100%;
+  }
+  .big-img {
+    width: 100%;
+  }
+  .absolute-p {
+    top: -500px;
+  }
+  .form-page {
+    margin-top: -250px;
+  }
+  .footer {
+    background: url("../images/eye-1.svg") no-repeat 113% 0,
+      url("../images/eye.svg") no-repeat -10% 90%;
+  }
 }
