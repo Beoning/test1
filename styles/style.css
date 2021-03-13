@@ -293,7 +293,7 @@ body {
   }
 }
 
-@media (min-width: 300px) and (max-width: 550px) {
+@media (min-width: 300px) and (max-width: 595px) {
   .question {
     width: 100%;
     height: auto;
