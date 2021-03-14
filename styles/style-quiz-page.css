@@ -95,9 +95,9 @@ body {
 }
 
 .q-number {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  left: 0%;
+  transform: translateX(5%);
   bottom: 2%;
   margin-top: 60px;
   font-style: normal;
@@ -219,7 +219,8 @@ body {
   .q-number {
     font-size: 10px;
     line-height: 12px;
-    bottom: 2%;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -268,7 +269,10 @@ body {
   }
 
   .q-number {
+    position: absolute;
     margin-top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 5%;
     font-size: 12px;
     line-height: 14px;
