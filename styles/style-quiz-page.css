@@ -98,11 +98,7 @@ body {
   margin-bottom: 40px;
 }
 
-@media (min-width: 600px) and (max-width: 1440px) {
-  .main-page {
-    width: 100%;
-  }
-
+@media screen and (min-width: 600px) and (max-width: 1440px) {
   .pred-wrapper {
     background: url("../images/eye-1.svg") no-repeat 70% 140% / 160px 160px;
     width: 100%;
@@ -133,9 +129,11 @@ body {
   }
 
   .btn-wrapper img {
-    left: 25%;
-    bottom: -100%;
+    left: 5%;
+    bottom: 5%;
     z-index: -1;
+    width: 100px;
+    height: 100px;
   }
 
   .q-number {
@@ -143,3 +141,52 @@ body {
     line-height: 12px;
   }
 }
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .pred-wrapper {
+    background: url("../images/eye-1.svg") no-repeat 110% 120% / 80px 80px;
+    padding: 30px 0 20px 0;
+  }
+
+  .pred {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .btn-wrapper {
+    margin-top: 40px;
+  }
+
+  .btn-wrapper h1 {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .btn {
+    width: 179px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .btn-wrapper img {
+    left: -5%;
+    bottom: 5%;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+  }
+
+  .q-number {
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
+} ;
