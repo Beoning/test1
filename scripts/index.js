@@ -35,7 +35,7 @@ btn2.addEventListener("click", (e) => {
     setTimeout(() => {
       loader.classList.add("disabled");
       pageThree.classList.remove("disabled");
-    }, 5000);
+    }, 3100);
     remember = year.value;
   } else {
     dateArr.forEach((elem) => {

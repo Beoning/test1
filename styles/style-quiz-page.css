@@ -164,7 +164,7 @@ body {
   color: black;
   padding: 20px;
   opacity: 0;
-  animation: appear 2s ease-in 1s 1 forwards;
+  animation: appear 2s ease-in 0.5s 1 forwards;
 }
 
 .loader {
@@ -176,7 +176,7 @@ body {
 }
 
 .loader img {
-  animation: rotate 5s linear 1 forwards;
+  animation: rotate 3s linear 1 forwards;
 }
 
 @keyframes rotate {
@@ -251,7 +251,9 @@ body {
     width: 100px;
     height: 100px;
   }
-
+  .btn-date {
+    text-align-last: center;
+  }
   .q-number {
     font-size: 10px;
     line-height: 12px;
@@ -302,6 +304,10 @@ body {
     z-index: -1;
     width: 60px;
     height: 60px;
+  }
+
+  .btn-date {
+    text-align-last: center;
   }
 
   .q-number {
