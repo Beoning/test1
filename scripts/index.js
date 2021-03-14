@@ -9,6 +9,8 @@ const young = document.getElementById("young");
 const adult = document.getElementById("adult");
 const old = document.getElementById("old");
 const pageFour = document.getElementById("page4");
+const loader = document.getElementById("loader");
+const btn4 = document.getElementsByClassName("btn4");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", (e) => {
@@ -29,9 +31,12 @@ btn2.addEventListener("click", (e) => {
   e.preventDefault;
   if (day.value != 0 && month.value != 0 && year.value != 0) {
     pageTwo.classList.add("disabled");
-    pageThree.classList.remove("disabled");
+    loader.classList.remove("disabled");
+    setTimeout(() => {
+      loader.classList.add("disabled");
+      pageThree.classList.remove("disabled");
+    }, 5000);
     remember = year.value;
-    console.log(remember);
   } else {
     dateArr.forEach((elem) => {
       if (elem.value == 0) {
@@ -55,5 +60,12 @@ for (let i = 0; i < btn3.length; i++) {
     }
     pageThree.classList.add("disabled");
     pageFour.classList.remove("disabled");
+  });
+}
+
+for (let i = 0; i < btn4.length; i++) {
+  btn4[i].addEventListener("click", (e) => {
+    e.stopPropagation;
+    pageFour.classList.add("disabled");
   });
 }
