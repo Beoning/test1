@@ -79,6 +79,14 @@ body {
   color: #ffffff;
 }
 
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+.btn::-moz-focus-inner {
+  border: 0;
+}
+
 .btn-wrapper img {
   position: absolute;
   left: 30%;
@@ -96,6 +104,17 @@ body {
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 40px;
+}
+
+.btn-date {
+  background: linear-gradient(
+    90deg,
+    rgba(228, 228, 228, 0.9) -6.2%,
+    rgba(203, 203, 203, 0.9) 100%
+  );
+  border-radius: 50px;
+  color: black;
+  text-align-last: center;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1440px) {
@@ -177,7 +196,7 @@ body {
 
   .btn-wrapper img {
     left: -5%;
-    bottom: 5%;
+    bottom: 10%;
     z-index: -1;
     width: 60px;
     height: 60px;
@@ -189,4 +208,12 @@ body {
     line-height: 14px;
     margin-bottom: 20px;
   }
-} ;
+}
+
+.disabled {
+  display: none;
+}
+
+.border {
+  border: 1px solid red;
+}
