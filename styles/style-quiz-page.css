@@ -219,6 +219,7 @@ body {
   .q-number {
     font-size: 10px;
     line-height: 12px;
+    bottom: 2%;
   }
 }
 
