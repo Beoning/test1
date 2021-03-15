@@ -9,6 +9,7 @@ const pageTwo = document.getElementById("page2");
 const pageThree = document.getElementById("page3");
 const pageFour = document.getElementById("page4");
 const pageFive = document.getElementById("page5");
+const pageSix = document.getElementById("page6");
 
 const young = document.getElementById("young");
 const adult = document.getElementById("adult");
@@ -72,17 +73,17 @@ for (let i = 0; i < btn4.length; i++) {
     e.stopPropagation;
     pageFour.classList.add("disabled");
     pageFive.classList.remove("disabled");
+    let time = 20;
+    let count = setInterval(() => {
+      time += 20;
+      if (time === 100) {
+        clearInterval(count);
+        setTimeout(() => {
+          pageFive.classList.add("disabled");
+          pageSix.classList.remove("disabled");
+        }, 1000);
+      }
+      percent.textContent = `${time}%`;
+    }, 1000);
   });
 }
-
-let time = 20;
-let count = setInterval(() => {
-  time += 20;
-  if (time === 100) {
-    clearInterval(count);
-    setTimeout(() => {
-      pageFive.classList.add("disabled");
-    }, 1000);
-  }
-  percent.textContent = `${time}%`;
-}, 1000);

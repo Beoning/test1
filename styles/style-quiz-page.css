@@ -279,6 +279,104 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.last-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 480px;
+  height: 164.43px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.answer p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #202024;
+}
+
+.answer p span {
+  font-weight: 700;
+}
+
+.first-span {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  padding: 30px 0;
+}
+
+.action {
+  width: 480px;
+  height: 286px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action p {
+  color: rgba(246, 200, 102, 1);
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.action span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.second-span {
+  padding: 30px 0;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.green-btn {
+  width: 395.07px;
+  height: 79.67px;
+  background: linear-gradient(
+    90deg,
+    rgba(76, 217, 100, 0.9) -6.2%,
+    rgba(50, 185, 73, 0.9) 100%
+  );
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.footer {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #9d9d9d;
+  letter-spacing: 0;
+}
+
 @media (min-width: 600px) and (max-width: 1440px) {
   .pred-wrapper {
     background: url("../images/eye-1.svg") no-repeat 70% 140% / 160px 160px;
