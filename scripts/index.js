@@ -1,16 +1,20 @@
-const pageOne = document.getElementById("page1");
 const dateBtns = document.getElementsByClassName("btn-date");
 const btns = document.getElementsByClassName("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementsByClassName("btn3");
+const btn4 = document.getElementsByClassName("btn4");
+
+const pageOne = document.getElementById("page1");
 const pageTwo = document.getElementById("page2");
 const pageThree = document.getElementById("page3");
+const pageFour = document.getElementById("page4");
+const pageFive = document.getElementById("page5");
+
 const young = document.getElementById("young");
 const adult = document.getElementById("adult");
 const old = document.getElementById("old");
-const pageFour = document.getElementById("page4");
 const loader = document.getElementById("loader");
-const btn4 = document.getElementsByClassName("btn4");
+const percent = document.getElementById("percent");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", (e) => {
@@ -67,5 +71,18 @@ for (let i = 0; i < btn4.length; i++) {
   btn4[i].addEventListener("click", (e) => {
     e.stopPropagation;
     pageFour.classList.add("disabled");
+    pageFive.classList.remove("disabled");
   });
 }
+
+let time = 20;
+let count = setInterval(() => {
+  time += 20;
+  if (time === 100) {
+    clearInterval(count);
+    setTimeout(() => {
+      pageFive.classList.add("disabled");
+    }, 1000);
+  }
+  percent.textContent = `${time}%`;
+}, 1000);
