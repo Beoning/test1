@@ -486,6 +486,51 @@ body {
     line-height: 14px;
     margin-bottom: 20px;
   }
+
+  .answer {
+    margin-top: 20px;
+    width: 259px;
+    height: 84px;
+  }
+
+  .answer p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .first-span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .action {
+    width: 259px;
+    height: 172px;
+  }
+
+  .action p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .second-span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .green-btn {
+    width: 238.01px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    font-size: 7px;
+    line-height: 9px;
+    letter-spacing: 0;
+  }
 }
 
 .disabled {
