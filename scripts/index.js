@@ -16,6 +16,7 @@ const adult = document.getElementById("adult");
 const old = document.getElementById("old");
 const loader = document.getElementById("loader");
 const percent = document.getElementById("percent");
+const nextDate = document.getElementById("next-date");
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", (e) => {
@@ -87,3 +88,10 @@ for (let i = 0; i < btn4.length; i++) {
     }, 1000);
   });
 }
+
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 1);
+let dayDate = currentDate.getDate();
+let monthDate = currentDate.getMonth() + 1;
+let yearDate = currentDate.getFullYear();
+nextDate.textContent = dayDate + "." + monthDate + "." + yearDate;
