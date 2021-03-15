@@ -377,6 +377,14 @@ body {
   letter-spacing: 0;
 }
 
+.green-btn:active,
+.green-btn:focus {
+  outline: none;
+}
+.green-btn::-moz-focus-inner {
+  border: 0;
+}
+
 @media (min-width: 600px) and (max-width: 1440px) {
   .pred-wrapper {
     background: url("../images/eye-1.svg") no-repeat 70% 140% / 160px 160px;
