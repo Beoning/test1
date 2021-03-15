@@ -3,7 +3,6 @@ const btns = document.getElementsByClassName("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementsByClassName("btn3");
 const btn4 = document.getElementsByClassName("btn4");
-const call = document.getElementById("call");
 
 const pageOne = document.getElementById("page1");
 const pageTwo = document.getElementById("page2");

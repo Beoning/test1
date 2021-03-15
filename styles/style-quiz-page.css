@@ -385,6 +385,24 @@ body {
   border: 0;
 }
 
+.data-page {
+  height: 100vh;
+}
+
+.content {
+  padding: 40px 0 0 40px;
+}
+
+.content p {
+  color: white;
+  padding-top: 10px;
+}
+
+.content span {
+  color: rgba(246, 200, 102, 0.9);
+  padding-left: 5px;
+}
+
 @media (min-width: 600px) and (max-width: 1440px) {
   .pred-wrapper {
     background: url("../images/eye-1.svg") no-repeat 70% 140% / 160px 160px;
